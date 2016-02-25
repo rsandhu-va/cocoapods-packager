@@ -26,7 +26,7 @@ module Pod
         @force = argv.flag?('force')
         @library = argv.flag?('library')
         @dynamic = argv.flag?('dynamic')
-        @mangle = argv.flag?('mangle', true)
+        @mangle = argv.flag?('mangle', false)
         @name = argv.shift_argument
         @source = argv.shift_argument
         @spec_sources = argv.option('spec-sources', 'https://github.com/CocoaPods/Specs.git').split(',')
